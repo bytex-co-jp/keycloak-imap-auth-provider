@@ -1,0 +1,1 @@
+{"browserFlow":"browser","bruteForceProtected":true,"directGrantFlow":"direct grant","dockerAuthenticationFlow":"docker auth","enabled":true,"firstBrokerLoginFlow":"first broker login","id":"73b04e22-cd15-4237-8d5b-dbf27363f4a1","realm":"REALM","registrationAllowed":false,"registrationFlow":"registration","resetCredentialsFlow":"reset credentials","resetPasswordAllowed":false}

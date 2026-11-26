@@ -1,0 +1,1 @@
+{"alias":"guard-post-broker-condition","config":{"attribute_expected_value":".+","attribute_name":"imap.auth.binding","include_group_attributes":"false","not":"false","regex":"true"},"id":"652b0e80-7227-489d-a78e-e541167bba97"}

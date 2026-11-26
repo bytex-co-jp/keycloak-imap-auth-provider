@@ -1,0 +1,1 @@
+[{"configurable":false,"displayName":"Docker Authenticator","id":"3114a156-e2f9-4a15-b36e-28b2c9a829e1","index":0,"level":0,"priority":10,"providerId":"docker-http-basic-authenticator","requirement":"REQUIRED","requirementChoices":["REQUIRED"]}]

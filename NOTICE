@@ -1,0 +1,11 @@
+Keycloak IMAP Authentication Provider
+Copyright 2026 ByteX Inc.
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+This product is a plugin for Keycloak (https://www.keycloak.org/), which is
+licensed under the Apache License, Version 2.0. The plugin JAR does not bundle
+Keycloak or any other third-party library. The login template
+(theme-resources/templates/imap-login.ftl) follows the structure and CSS
+classes of the Keycloak login theme, which is licensed under the Apache
+License, Version 2.0.

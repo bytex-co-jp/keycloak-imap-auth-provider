@@ -1,0 +1,20 @@
+{
+  "attributes": [
+    {
+      "name": "imap.auth.binding",
+      "multivalued": false,
+      "permissions": {
+        "view": ["admin"],
+        "edit": ["admin"]
+      }
+    },
+    {
+      "name": "imap.auth.identity",
+      "multivalued": false,
+      "permissions": {
+        "view": ["admin"],
+        "edit": ["admin"]
+      }
+    }
+  ]
+}

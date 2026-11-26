@@ -1,0 +1,1 @@
+{"alias":"imap-managed-guard-reset-condition","config":{"attribute_expected_value":".+","attribute_name":"imap.auth.binding","include_group_attributes":"false","not":"false","regex":"true"},"id":"d899361f-c4b5-44b5-8238-81da7e57c4b7"}

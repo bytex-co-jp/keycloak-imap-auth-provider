@@ -1,0 +1,1 @@
+{"alias":"imap-managed-guard-browser-condition","config":{"attribute_expected_value":".+","attribute_name":"imap.auth.binding","include_group_attributes":"false","not":"false","regex":"true"},"id":"3d991506-f71b-42eb-8347-9bacdd98d960"}

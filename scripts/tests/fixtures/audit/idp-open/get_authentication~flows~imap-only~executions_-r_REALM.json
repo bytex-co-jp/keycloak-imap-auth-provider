@@ -1,0 +1,1 @@
+[{"alias":"imap-only-cfg","authenticationConfig":"7e386165-5804-4523-9071-c39c8734bcd5","configurable":true,"displayName":"IMAP Authentication","id":"83352f42-9a98-4b37-8650-fdd1e85faec0","index":0,"level":0,"priority":0,"providerId":"imap-authenticator","requirement":"REQUIRED","requirementChoices":["REQUIRED","DISABLED"]}]

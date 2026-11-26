@@ -1,0 +1,1 @@
+{"alias":"guard-fbl-noemail-f1-condition","config":{"attribute_expected_value":".+","attribute_name":"imap.auth.binding","include_group_attributes":"false","not":"false","regex":"true"},"id":"21933471-be10-41db-af00-4a92eb687469"}

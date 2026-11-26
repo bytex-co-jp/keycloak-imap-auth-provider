@@ -1,0 +1,1 @@
+{"alias":"imap-managed-guard-direct-grant-condition","config":{"attribute_expected_value":".+","attribute_name":"imap.auth.binding","include_group_attributes":"false","not":"false","regex":"true"},"id":"1183cf2e-f418-49cb-9523-ebd62d96eacb"}

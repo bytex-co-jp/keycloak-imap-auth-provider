@@ -1,0 +1,50 @@
+plugins {
+    id 'java'
+    id 'com.diffplug.spotless' version '8.10.4'
+}
+group = 'jp.co.bytex.keycloak'
+version = '1.0.0'
+repositories { mavenCentral() }
+dependencies {
+    compileOnly 'org.eclipse.angus:angus-mail:2.0.5'
+    compileOnly 'jakarta.mail:jakarta.mail-api:2.1.1'
+    testImplementation 'org.eclipse.angus:angus-mail:2.0.5'
+    testImplementation 'jakarta.mail:jakarta.mail-api:2.1.1'
+    compileOnly 'org.keycloak:keycloak-server-spi:26.8.1'
+    compileOnly 'org.keycloak:keycloak-server-spi-private:26.8.1'
+    compileOnly 'org.keycloak:keycloak-services:26.8.1'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.11.4'
+    testImplementation 'org.keycloak:keycloak-services:26.8.1'
+    testImplementation 'org.keycloak:keycloak-themes:26.8.1'
+    testImplementation 'org.freemarker:freemarker:2.3.35'
+    testImplementation 'org.mockito:mockito-core:5.23.0'
+    testImplementation('com.icegreen:greenmail:2.1.15') {
+        // Keep the mail implementation on the test classpath identical to the Keycloak runtime pair declared above.
+        exclude group: 'org.eclipse.angus', module: 'jakarta.mail'
+        exclude group: 'jakarta.mail', module: 'jakarta.mail-api'
+        exclude group: 'jakarta.activation', module: 'jakarta.activation-api'
+        exclude group: 'org.eclipse.angus', module: 'angus-activation'
+    }
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+tasks.withType(JavaCompile).configureEach { options.release = 21; options.encoding = 'UTF-8' }
+test { useJUnitPlatform() }
+jar {
+    from(rootDir) {
+        include 'LICENSE', 'NOTICE'
+        into 'META-INF'
+    }
+    manifest {
+        attributes('Implementation-Title': project.name, 'Implementation-Version': project.version,
+                'Implementation-Vendor': 'ByteX Inc.')
+    }
+}
+spotless {
+    java {
+        target 'src/main/java/**/*.java', 'src/test/java/**/*.java'
+        eclipse('4.35').configFile('config/java-format.xml')
+        importOrder('java', 'javax', 'jakarta', 'org', 'com', '')
+        trimTrailingWhitespace()
+        endWithNewline()
+    }
+}

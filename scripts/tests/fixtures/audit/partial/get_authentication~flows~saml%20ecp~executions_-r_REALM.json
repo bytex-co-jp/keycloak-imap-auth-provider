@@ -1,0 +1,1 @@
+[{"configurable":false,"displayName":"HTTP Basic Authentication","id":"be2ffaef-365e-4979-af1f-661c97e325cf","index":0,"level":0,"priority":10,"providerId":"http-basic-authenticator","requirement":"REQUIRED","requirementChoices":["REQUIRED","ALTERNATIVE","CONDITIONAL","DISABLED"]}]

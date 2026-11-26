@@ -1,0 +1,4 @@
+**
+!build/
+!build/libs/
+!build/libs/keycloak-imap-auth-provider-*.jar
